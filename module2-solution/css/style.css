@@ -1,1 +1,82 @@
-
+ * {
+                box-sizing: border-box;
+            }
+            
+            #heading{
+                text-align: center;
+		font-family: serif, "Times New Roman", Times;
+            }
+            
+            #secondPT {
+                color: white;
+                background-color: #ff4d4d;
+            }
+            
+            #thirdPT {
+                background-color: #ffd966;
+            }
+            .container {
+                align-items: center;
+                margin-top: 50px;
+            }
+            
+            .pHeadingDiv{
+                float: right;
+                margin-bottom: 0px;
+                margin-right: 0px;
+            }
+            
+            .pHeadingText{
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 0px;
+                width: 100px;
+                height: 40px;
+                background-color: pink;
+                padding: 7px;
+                text-align: center;
+                border: 1px solid black;
+                margin-right: 0px;
+            }
+            
+            .regParagraphDiv {
+                clear: right;
+                margin-top: 0px;
+            }
+            
+            .regParagraphText {
+                padding: 10px;
+            }
+            
+            @media(min-width: 992px) {
+                .element {
+                    width: calc(33.33% - 11px);
+                    height: 180px;
+                    background-color: grey;
+                    border: 1px solid red;
+                    margin: 5px;
+                    float: left;
+                	}
+            }
+            
+            @media(min-width: 768px) and (max-width: 991px) {
+                .element {
+                    width: calc(50% - 11px);
+                    height: 170px;
+                    background-color: grey;
+                    border: 1px solid red;
+                    margin: 5px;
+                    float: left;
+                	}
+            }
+            
+            @media(max-width: 767px) {
+                .element {
+                    width: calc(100% - 11px);
+                    height: 170px;
+                    background-color: grey;
+                    border: 1px solid red;
+                    margin: 5px;
+                    float: left;
+                	}
+            }
