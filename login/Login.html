@@ -1,1 +1,79 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-default navbar-expand">
+				<div class="container> 
+					<div class="navbar-header" href="Login.html">
+						<a class="navbar-brand col-md-2" href="Login.html">
+							<img id="logo" src="file:/M:/Daten/MTULoginPage/MTULogoNOBG.png">
+						</a>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="collapsable-nav">
+							<ul class="navbar-nav navbar-right">
+								<li><a href="#">DE</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div id="main-content" class="container>
+			<div id="login-div" class="col-xs-12 col-sm-12 col-md-3 col-xl-12">
+				<form id="login-form">
+					<img id="logoForm" src="file:/M:/Daten/MTULoginPage/MTULogoNOBG.png">
+					<p id="lfHeading">PROD Sign On</p>
+					<div class="form-group" id="form>
+						<p id="usernameLabel" for="username"><strong>Benutzername</strong></p>
+						<input type="username" class="form-control" id="usernameInputField" placeholder="Userkey">
+						<br>
+						<p id="passwordLabel" for="password"><strong>Passwort</strong></p>
+						<input type="password" class="form-control" id="passwordInputField" placeholder="Passwort">
+						<br>
+						<button type="submit" class="btn btn-default">Login</button> 
+						<p></p>
+						<p>oder</p>
+						<button type="submit" class="btn btn-default">Automatischer Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer class="panel-footer">
+			<div class="container">
+				<div class="row">
+					<section id="datenschutz" class="col-sm-6">
+						<a href="Login.html" id="DSText">Datenschutz</a>
+						<hr class="visible-sm">
+					</section>
+					<section id="impressum" class="col-sm-6">
+						<a href="Login.html" id="IMPText">Impressum</a>
+					</section>
+				</div>
+			</div>
+		</footer>
+		<script>
+			alert("Test1");
+			var imagesArray = new Array("file:/M:/Daten/MTULoginPage/BG2.jpg", "file:/M:/Daten/MTULoginPage/BG3.jpg", "file:/M:/Daten/MTULoginPage/Flugzeug2.jpg");
+			var randomNumber = Math.floor(Math.random() * 4;
+			alert("Test");
+		</script>
+		<!-- jQuery (Bootstrap JS plugins depend on it) -->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+	</body>
+</html>
