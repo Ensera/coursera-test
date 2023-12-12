@@ -32,8 +32,8 @@
 				</div>
 			</nav>
 		</header>
-		<div id="main-content" class="container>
-			<div id="login-div" class="col-xs-12 col-sm-12 col-md-3 col-xl-12">
+		<div id="main-content" class="container">
+			<div id="login-div">
 				<form id="login-form">
 					<img id="logoForm" src="file:/M:/Daten/MTULoginPage/MTULogoNOBG.png">
 					<p id="lfHeading">PROD Sign On</p>
@@ -66,10 +66,13 @@
 			</div>
 		</footer>
 		<script>
-			alert("Test1");
-			var imagesArray = new Array("file:/M:/Daten/MTULoginPage/BG2.jpg", "file:/M:/Daten/MTULoginPage/BG3.jpg", "file:/M:/Daten/MTULoginPage/Flugzeug2.jpg");
-			var randomNumber = Math.floor(Math.random() * 4;
-			alert("Test");
+			var imagesArray = ["file:/M:/Daten/MTULoginPage/BG2.jpg", "file:/M:/Daten/MTULoginPage/BG3.jpg", "file:/M:/Daten/MTULoginPage/Flugzeug2.jpg"];
+			var min = 0;
+			var max = 2;
+			var randomNumber = Math.round(Math.random() * (max - min)) + min;
+			var imageURL = imagesArray[randomNumber];
+			alert(imageURL);
+			document.getElementById("body").style.backgroundImage = "url(" + imageUrl + ")";
 		</script>
 		<!-- jQuery (Bootstrap JS plugins depend on it) -->
         <script src="js/jquery-2.1.4.min.js"></script>
