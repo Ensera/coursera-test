@@ -24,7 +24,7 @@
 						</button>
 						<div class="collapse navbar-collapse" id="collapsable-nav">
 							<ul class="navbar-nav navbar-right">
-								<li><a href="#">DE</a></li>
+								<li><a id="deLink" href="#">DE</a></li>
 								<li><a id="engLink" href="#">EN</a></li>
 							</ul>
 						</div>
@@ -37,17 +37,19 @@
 				<form id="login-form">
 					<img id="logoForm" src="file:/M:/Daten/MTULoginPage/MTULogoNOBG.png">
 					<p id="lfHeading">PROD Sign On</p>
-					<div class="form-group" id="form>
+					<div class="form-group" id="form">
 						<p id="usernameLabel" for="username"><strong>Benutzername</strong></p>
-						<input type="username" class="form-control" id="usernameInputField" placeholder="Userkey">
+						<input type="username" class="form-control" id="usernameInputField" placeholder="Userschl&uuml;ssel">
 						<br>
 						<p id="passwordLabel" for="password"><strong>Passwort</strong></p>
 						<input type="password" class="form-control" id="passwordInputField" placeholder="Passwort">
 						<br>
-						<button type="submit" class="btn btn-default">Login</button> 
+						<button id="loginBtn" type="submit" class="btn btn-default">Login</button> 
 						<p></p>
-						<p>oder</p>
-						<button type="submit" class="btn btn-default">Automatischer Login</button>
+						<p id="oderLabel">oder</p>
+						<button id="automaticLoginBtn" type="submit" class="btn btn-default">Automatischer Login</button>
+						<br>
+						<p id="wrongPWParagraph">Wrong Username or Password. Please try again. </p>
 					</div>
 				</form>
 			</div>
@@ -75,10 +77,32 @@
 			
 			var link = document.getElementById("engLink");
 			link.addEventListener("click", translateENG);
-			function translateENG {
-				alert("Hallo");
-				//document.getElementById("usernameLabel").innnerHTML = "Username";
+			function translateENG(){
+				document.getElementById("usernameLabel").innerHTML = "<strong>Username<strong>";
+				document.getElementById("usernameInputField").placeholder = "Userkey";
+				document.getElementById("passwordLabel").innerHTML = "<strong>Password<strong>";
+				document.getElementById("passwordInputField").placeholder = "Password";
+				document.getElementById("oderLabel").innerHTML = "or";
+				document.getElementById("automaticLoginBtn").innerHTML = "Automatic Login";
 			}
+			
+			var linkDE = document.getElementById("deLink");
+			linkDE.addEventListener("click", translateDE);
+			function translateDE(){
+				document.getElementById("usernameLabel").innerHTML = "<strong>Benutzername<strong>";
+				document.getElementById("usernameInputField").placeholder = "Userschluessel";
+				document.getElementById("passwordLabel").innerHTML = "<strong>Passwort<strong>";
+				document.getElementById("passwordInputField").placeholder = "Passwort";
+				document.getElementById("oderLabel").innerHTML = "oder";
+				document.getElementById("automaticLoginBtn").innerHTML = "Automatischer Login";
+			}
+			
+			var loginButton = document.getElementById("loginBtn");
+			loginButton.addEventListener("click", showLoginError);
+			function showLoginError() {
+				alert("Login Error");
+				//document.getElementById("wrongPWParagraph").visibility = "visible";
+			]
 		</script>
 		<!-- jQuery (Bootstrap JS plugins depend on it) -->
         <script src="js/jquery-2.1.4.min.js"></script>
