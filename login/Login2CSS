@@ -1,0 +1,32 @@
+body {
+	height: 100%;
+	background-image: url("file:/M:/Daten/MTULoginPage/images/BG1.jpg");
+	background-repeat:no;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+	
+}
+
+#logo {
+	height: 120px;
+	width: 240px;
+	margin: 10px;
+	margin-left: 30px;
+}
+
+.navbar-toggle {
+		background-color: white;
+		color: black;
+}
+
+.icon-bar {
+	color:black;
+}
